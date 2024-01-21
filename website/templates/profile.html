@@ -3,7 +3,8 @@
 {% block title %}Profile Page{% endblock %}
 
 {% block content %}
-<h1>Welcome User !</h1>
+
+<h1>Welcome {{user.username|title}}! </h1>
 <h2>This is your Profile Page</h2>
 
 {% endblock %}

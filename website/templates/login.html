@@ -4,5 +4,13 @@
 
 {% block content %}
 <h2>Login page</h2>
+<div> 
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %} <!-- Cross-Site Request Forgery (CSRF) token :  used to include a security token in HTML forms -->
+        <input type="text" placeholder ="user name" name='user_name'><br><br>
+        <input type="password" placeholder="password" name='password'><br><br>
+        <button type="submit">login</button>
+    </form>
+</div>
 
 {% endblock %}
