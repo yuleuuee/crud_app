@@ -92,6 +92,8 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+# This way we are telling Django to use our custom model instead the default one.
+AUTH_USER_MODEL = "website.CrudUsers"
 
 
 # Password validation
